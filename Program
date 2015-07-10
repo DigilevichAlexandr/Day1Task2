@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ASP.NET.Digilevich.Day1.Task3
+{    
+
+    class Program
+    {
+        static void Print(int[][] arr)
+        {
+            foreach (int[] line in arr)
+            {
+
+                foreach (int a in line)
+                    Console.Write(a.ToString() + " ");
+                Console.WriteLine();
+            }
+        }
+
+        //enum{}
+
+        static void Main(string[] args)
+        {
+
+
+            int[][] myarr1 = {new int[] { 1, 5, 32, 7, 54, 12 },new int[] { 4, 22, 9 },new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 }};
+            Print(myarr1);
+            SortClass.SortLinesKind(myarr1, 1);
+            Console.WriteLine("Первая сортировка по возрастанию");
+            Print(myarr1);
+            Console.WriteLine();
+            Console.WriteLine();
+            int[][] myarr2 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            Print(myarr2);
+            SortClass.SortLinesKind(myarr2, 2);
+            Console.WriteLine("Первая сортировка по убыванию");
+            Print(myarr2);
+            Console.WriteLine();
+            Console.WriteLine();
+            int[][] myarr3 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            Print(myarr3);
+            SortClass.SortLinesKind(myarr3, 3);
+            Console.WriteLine("Вторая сортировка по возрастанию");
+            Print(myarr3);
+            Console.WriteLine();
+            Console.WriteLine();
+            int[][] myarr4 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            Print(myarr4);
+            SortClass.SortLinesKind(myarr4, 4);
+            Console.WriteLine("Вторая сортировка по убыванию");
+            Print(myarr4);
+            Console.WriteLine();
+            Console.WriteLine();
+            int[][] myarr5 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            Print(myarr5);
+            SortClass.SortLinesKind(myarr5, 5);
+            Console.WriteLine("Третья сортировка по возрастанию");
+            Print(myarr5);
+            Console.WriteLine();
+            Console.WriteLine();
+            int[][] myarr6 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            Print(myarr6);
+            SortClass.SortLinesKind(myarr6, 6);
+            Console.WriteLine("Третья сортировка по убыванию");
+            Print(myarr6);
+
+            //int[][] myarr2 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 }};
+            //SortClass.Sort1Descending(myarr2);
+            //Console.WriteLine("Первая сортировка по убыванию");
+            //Print(myarr2);
+
+            //int[][] myarr3 = { new int[] { 1, 5, 32, 7, 54, 12 }, new int[] { 4, 22, 9 }, new int[] { 1, 75, 67, 23, 4, 74, 45, 3, 7, 1 } };
+            //SortClass.Sort2Ascending(myarr3);
+            //Console.WriteLine("Вторая сортировка по возрастанию");
+            //Print(myarr3);
+
+            Console.ReadLine();
+        }
+    }
+}
